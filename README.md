@@ -5,7 +5,7 @@ Download `minifi-0.5.0-bin.tar.gz` in docker/minifi
 ## Start the Docker env
 ```
 docker swarm init
-docker stack deploy -c nifi-composite.yml nifi
+docker stack deploy -c docker-compose.yml nifi
 ```
 
 ## Set up the connection from the minifi agent to the NiFi server
