@@ -8,7 +8,7 @@ docker swarm init
 docker stack deploy -c nifi-composite.yml nifi
 ```
 
-## Create the NiFi port
+## Set up the connection from the minifi agent to the NiFi server
 In the NiFi web UI `http://localhost:8080/nifi`, do the following:
 * Create an input port, connect it to a processor (e.g. PutFile) or to a Funnel and start it
 * Double-click on it and take the port id, for example `58b84b09-0169-1000-b2a5-f0c4730422c1`
