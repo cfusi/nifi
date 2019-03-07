@@ -1,4 +1,16 @@
 # nifi
+The docker compoe file creates a stack comprising:
+- NiFi
+- Kafka & Zookeeper
+- MiNiFi
+
+The NiFi processors can point to the kafka broker:
+```
+kafka:9092
+```
+
+After the configuration described below, the MiNiFi agent tails the file /tmp/tail.txt and sends the text lines to the NiFi input port
+
 ## Preparation
 Download `minifi-0.5.0-bin.tar.gz` in docker/minifi
 
